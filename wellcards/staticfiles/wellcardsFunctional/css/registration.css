@@ -1,0 +1,149 @@
+/*Form*/
+
+.form-wrapper {
+  width: 550px;
+  height: 774px;
+  border-radius: 30px;
+  background-color: var(--form-background);
+  color: var(--form-text);
+  font-family: "Sarabun", sans-serif;
+  box-sizing: border-box;
+  padding: 48px 53px 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__inner-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  padding: 0 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.form__text {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.form__title {
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 4.16rem;
+  text-wrap: nowrap;
+}
+
+.form__subtitle {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.08rem;
+}
+
+.form__person-info {
+  display: flex;
+  justify-content: space-between;
+  .form__input {
+    width: 190px;
+  }
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  row-gap: 10px;
+}
+
+.form__checkbox-label {
+  color: var(--form-text);
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.34rem;
+  display: flex;
+  column-gap: 14px;
+}
+
+.form__checkbox {
+  display: none;
+}
+
+.form__checkbox:checked ~ .form__mark {
+  background-color: var(--color-primary);
+}
+
+.form__mark {
+  display: inline-block;
+  cursor: pointer;
+  min-width: 34px;
+  max-width: 34px;
+  min-height: 34px;
+  max-height: 34px;
+  border: 2px solid var(--color-primary);
+  border-radius: 6px;
+  background-color: transparent;
+  margin-top: 5px;
+}
+
+.form input {
+  border: 2px solid var(--color-primary);
+  border-radius: 10px;
+  height: 51px;
+  background-color: transparent;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.08rem;
+  color: var(--color-primary);
+  padding: 13px 0 17px 12px;
+}
+
+.form__password {
+  font-size: 2rem;
+  line-height: 2.6rem;
+}
+
+.form__submit {
+  cursor: pointer;
+  background-color: var(--color-primary);
+  color: var(--submit-text);
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.12rem;
+  border: none;
+  outline: none;
+  border-radius: 36px;
+  padding: 16px 0 17px;
+}
+
+.form__inner-text {
+  font-size: 1.8rem;
+  line-height: 2.34px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 20px;
+  margin-right: 2px;
+}
+
+.link {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.34rem;
+  text-decoration: none;
+  color: var(--link-text);
+  text-align: center;
+}
+
+@media (max-height:774px) {
+  .form-wrapper {
+    height: auto;
+    padding: 24px 53px 16px;
+  }
+}

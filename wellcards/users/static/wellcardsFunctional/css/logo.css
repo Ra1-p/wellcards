@@ -1,0 +1,28 @@
+/*Logo*/
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-primary);
+  font-family: "Sarabun", sans-serif;
+}
+
+.logo__title {
+  font-weight: 800;
+  font-size: 6.4rem;
+  line-height: 6.32rem;
+  letter-spacing: 10px;
+}
+
+.logo_highlight {
+  display: inline-block;
+  height: 50px;
+  background-color: var(--logo-highlight);
+}
+
+.logo__description {
+  font-weight: 500;
+  font-size: 1.9rem;
+  line-height: 2.47rem;
+}

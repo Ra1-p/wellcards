@@ -1,0 +1,37 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/vars";
+
+.bins {
+  background-color: $lightnessblue;
+  color: $darknessblue;
+  padding: 25px 25px 15px;
+  border-radius: 5px;
+  @include font($font-size: 2rem, $font-weight: 700, $line-height: 2.6rem);
+  &__layout {
+    display: flex;
+    column-gap: 65px;
+  }
+}
+
+.column {
+  min-width: 127px;
+  width: 100%;
+  &__title {
+    font-weight: 600;
+    margin-bottom: 11px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    list-style: none;
+    @include font($font-size: 1.4rem, $font-weight: 500, $line-height: 1.82rem);
+    padding: 0;
+    margin: 0;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

@@ -1,0 +1,46 @@
+@import "../../../styles/vars";
+@import "../../../styles/mixins";
+
+.account-pages {
+    height: 100%;
+    padding-right: 25px;
+
+    &-list {
+        list-style-type: none;
+        padding: 0;
+        li {
+
+            a {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+            }
+        }
+
+        .page {
+            margin-bottom: 35px;
+            @include font($font-size: 2rem, $font-weight: 700, $line-height: 2.6rem);
+
+            a {
+                color: $darknessblue;
+            }
+
+            img {
+                margin-right: 19px;
+            }
+        }
+
+        .subpage {
+            margin-left: 72px;
+            @include font($font-size: 1.6rem, $font-weight: 500, $line-height: 2.08rem);
+
+            a {
+                color: $darkblue;
+            }
+
+            img {
+                margin-right: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.main {
+  background-color: var(--page-background);
+  height: 100vh;
+  background-image: url("../images/cards.svg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 127px 0 134px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

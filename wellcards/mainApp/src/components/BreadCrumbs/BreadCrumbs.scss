@@ -1,0 +1,19 @@
+@import "../../styles/mixins.scss";
+@import "../../styles//vars";
+
+.breadcrumbs {
+  margin-top: 18px;
+  color: $darknessblue;
+  display: flex;
+  align-items: center;
+  &__main {
+    @include font($font-size: 3rem, $font-weight: 700, $line-height: 3.9rem);
+  }
+  &__separator {
+    margin: 0 5px 0 8px;
+    @include font($font-size: 1.6rem, $font-weight: 400, $line-height: 2.08rem);
+  }
+  &__current {
+    @include font($font-size: 1.8rem, $font-weight: 500, $line-height: 2.34rem);
+  }
+}

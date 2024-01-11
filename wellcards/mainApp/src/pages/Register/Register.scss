@@ -1,0 +1,8 @@
+@import "../../styles/placeholders";
+.register-main {
+  @extend %auth-main;
+}
+
+.register-container {
+  @extend %auth-container;
+}

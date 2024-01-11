@@ -1,0 +1,16 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/vars";
+
+.card-details-page {
+  &__layout {
+    display: flex;
+    column-gap: 20px;
+    margin-top: 35px;
+    margin-bottom: 40px;
+  }
+  &__subbreadcrumbs {
+    @include font($font-size: 1.8rem, $font-weight: 500, $line-height: 2.34rem);
+    color: $darknessblue;
+    margin-bottom: 30px;
+  }
+}

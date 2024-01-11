@@ -1,0 +1,63 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/vars";
+
+.reg-form-wrapper {
+  width: 550px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background-color: $lightnessblue;
+  color: $darknessblue;
+  padding: 48px 53px 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.reg-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  &__inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    padding: 0 30px;
+  }
+  &__text {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  &__title {
+    margin: 0;
+    @include font($font-size: 3.2rem, $font-weight: 500, $line-height: 4.16rem);
+  }
+  &__subtitle {
+    margin: 0;
+    @include font($font-size: 1.6rem, $font-weight: 500, $line-height: 2.08rem);
+  }
+  &__person-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__inner-text {
+    @include font($font-size: 1.8rem, $font-weight: 500, $line-height: 2.34rem);
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 2px;
+  }
+}
+
+.reg-link {
+  @include font($font-size: 1.8rem, $font-weight: 500, $line-height: 2.34rem);
+  text-decoration: none;
+  color: $outline;
+  text-align: center;
+}
+
+@media (max-height: 774px) {
+  .reg-form-wrapper {
+    padding: 24px 53px 16px;
+  }
+  .reg-form {
+    row-gap: 10px;
+  }
+}

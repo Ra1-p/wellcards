@@ -1,0 +1,8 @@
+.issue-card {
+  &__layout {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 18px;
+  }
+}

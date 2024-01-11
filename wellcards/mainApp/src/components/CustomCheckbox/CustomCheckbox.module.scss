@@ -1,0 +1,57 @@
+@import "../../styles/mixins";
+@import "../../styles/vars";
+
+$primary: #375ba1;
+
+.checkbox {
+  display: none;
+  &__label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: $primary;
+    @include font($font-size: 1.6rem, $font-weight: 500, $line-height: 2.08rem);
+    font-family: "Sarabun", "sans-serif";
+    padding-left: 28px;
+    a {
+      text-decoration: none;
+      color: $outline;
+    }
+
+    &_hidden {
+      color: $lightnessblue;
+    }
+  }
+
+  &__mark {
+    position: absolute;
+    cursor: pointer;
+    left: 0;
+    border: 1px solid $primary;
+    background-color: transparent;
+    border-radius: 6px;
+
+    &_small {
+      width: 15px;
+      height: 15px;
+    }
+    &_big {
+      width: 22px;
+      height: 22px;
+    }
+
+  }
+  &:checked + .checkbox__mark {
+    background-color: $primary;
+  }
+  &__auth-label {
+    padding-left: 50px;
+    color: $darknessblue;
+    @include font($font-size: 1.8rem, $font-weight: 500, $line-height: 2.34rem);
+  }
+  &__auth-mark {
+    width: 36px;
+    height: 36px;
+    border: 2px solid $primary;
+  }
+}

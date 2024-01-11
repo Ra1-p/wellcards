@@ -1,0 +1,60 @@
+.confirmation {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confirmation__body {
+  width: 900px;
+  height: 352px;
+  box-sizing: border-box;
+  background-color: var(--confirm-background);
+  border-radius: 30px;
+  font-family: "Sarabun", sans-serif;
+  color: var(--confirm-text);
+  padding: 38px 61px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.34rem;
+}
+
+.confirmation__title {
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4.16rem;
+}
+
+.confirmation__subtitle {
+  font-size: 3.2rem;
+  line-height: 4.16rem;
+  margin-bottom: 13px;
+}
+
+p:first-of-type {
+  margin-bottom: 22px;
+}
+p:nth-of-type(2) {
+  margin-bottom: 25px;
+}
+
+.confirmation__telegram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.confirmation__link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.6rem;
+}

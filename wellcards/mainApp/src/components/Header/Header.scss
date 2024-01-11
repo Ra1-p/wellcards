@@ -1,0 +1,93 @@
+@import "../../styles/vars";
+@import "../../styles/mixins";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.logo {
+  margin-left: 35px;
+  display: flex;
+  flex-direction: column;
+
+  &-img {
+    height: 67px;
+  }
+
+  &-text {
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: $darkblue;
+    font-weight: bold;
+  }
+}
+
+.account-info {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  &__title {
+    color: $darknessblue;
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  &__wallet {
+    border-radius: 5px;
+    background-color: $headerblock;
+    color: $darknessblue;
+    padding: 10px 25px;
+    align-self: center;
+    display: inline-flex;
+    flex-direction: column;
+  }
+
+  &__profile {
+    background-color: $headerblock;
+    display: flex;
+
+    .profile {
+      &__main-info {
+        padding: 10px 25px 10px 26px;
+
+        display: flex;
+        flex-direction: column;
+      }
+
+      &-name {
+        @include font(
+          $font-size: 1.6rem,
+          $font-weight: 500,
+          $line-height: 2.08rem
+        );
+        color: $darknessblue;
+      }
+
+      &__logout-btn {
+        cursor: pointer;
+        padding: 0px 20px;
+        border: none;
+        outline: none;
+        color: #6786c7;
+        @include font(
+          $font-size: 2rem,
+          $font-weight: 700,
+          $line-height: 2.6rem
+        );
+            background-color: $headerblock;
+        border-left: 1px solid $darknessblue;
+        border-radius: 0px 5px 5px 0px;
+      }
+    }
+  }
+
+
+}
+
+.wallet {
+  &__balance {
+    @include font($font-size: 1.8rem, $font-weight: 500, $line-height: 2.34rem);
+  }
+}

@@ -1,0 +1,52 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/vars";
+
+$background: #d6e0e9;
+$text: #1a305b;
+
+.updates {
+  color: $text;
+  background-color: $background;
+  border-radius: 5px;
+  padding: 23px 35px 25px;
+  font-family: "Sarabun", "sans-serif";
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    @include font($font-size: 2rem, $font-weight: 700, $line-height: 2.6rem);
+  }
+
+  &__date {
+    padding-top: 2px;
+    @include font($font-size: 1.8rem, $font-weight: 500, $line-height: 2.34rem);
+  }
+
+  &__text {
+    @include font($font-size: 1.6rem, $font-weight: 500, $line-height: 2.08rem);
+    text-align: center;
+  }
+
+  &__available {
+    @include font($font-size: 2.4rem, $font-weight: 700, $line-height: 3.12rem);
+  }
+
+  &__sum {
+    @include font($font-size: 1.8rem, $font-weight: 600, $line-height: 2.34rem);
+  }
+  &__body {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__other {
+    display: flex;
+    column-gap: 45px;
+  }
+}

@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confirmation</title>
+    <link rel="stylesheet" href="{% static 'wellcardsFunctional/css/reset.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'wellcardsFunctional/css/var.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'wellcardsFunctional/css/layout.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'wellcardsFunctional/css/logo.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'wellcardsFunctional/css/confirm_email.css' %}" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sarabun:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <div class="logo">
+          <img class="logo__img" src="{% static 'wellcardsFunctional/images/logo.svg' %}">
+          <h1 class="logo__title">WELLCARDS</h1>
+          <p class="logo__description">
+            Virtual debit cards and buying solutions
+          </p>
+        </div>
+        <div class="confirmation">
+          <div class="confirmation__body">
+            <h1 class="confirmation__title">Verify Your E-mail Address</h1>
+            <h2 class="confirmation__subtitle">Please verify your email</h2>
+            <p>
+              We have sent an e-mail to you for verification. Follow the link
+              provided to finalize the signup process. If you do not see the
+              verification e-mail in your main inbox, check your spam folder.
+              Please contact us if you do not receive the verification e-mail
+              within a few minutes.
+            </p>
+            <p>
+              If you have any troubles or need more information about account
+              verification, please contact:
+            </p>
+            <div class="confirmation__telegram">
+              <img src="{% static 'wellcardsFunctional/images/telegram.png' %}" alt="Telegram icon" />
+              <a href="#" class="confirmation__link">@wellcards_support</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

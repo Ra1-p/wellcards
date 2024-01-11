@@ -1,0 +1,50 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/vars";
+
+.search {
+    padding: 25px;
+    padding-bottom: 47px;
+    display: grid;
+
+    &-title {
+        @include font($font-size: 3rem, $font-weight: 700, $line-height: 3.9rem);
+        margin-bottom: 28px;
+    }
+
+    &-container {
+        width: 100%;
+        grid-column: 1/-1;
+        position: relative;
+    }
+
+    &-field {
+        display: grid;
+        row-gap: 35px;
+        column-gap: 20px;
+        grid-template-columns: 386px auto;
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+
+            &__container {
+                display: flex;
+                gap: 4px;
+            }
+        }
+    }
+
+
+    .cards__amount {
+        @include font($font-size: 1.4rem, $font-weight: 500, $line-height: 1.82rem);
+        position: absolute;
+        right: 25px;
+        color: $darkblue;
+    }
+}
+
+.buttons {
+    margin-top: 39px;
+    display: flex;
+    gap: 24px;
+}

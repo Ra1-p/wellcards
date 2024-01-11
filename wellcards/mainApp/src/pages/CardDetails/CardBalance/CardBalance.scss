@@ -1,0 +1,32 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/vars";
+
+.card-balance {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  justify-content: space-between;
+  color: $darknessblue;
+  border-radius: 5px;
+  padding: 26px 70px 22px 25px;
+  background-color: $lightnessblue;
+  &__title {
+    @include font($font-size: 2rem, $line-height: 2.6rem, $font-weight: 700);
+  }
+  &__amount {
+    display: flex;
+    column-gap: 25px;
+    text-align: center;
+  }
+  &__sum {
+    @include font($font-size: 2.4rem, $line-height: 3.12rem, $font-weight: 700);
+  }
+  &__text {
+    @include font($font-size: 1.6rem, $line-height: 2.08rem, $font-weight: 500);
+  }
+  &__buttons {
+    display: flex;
+    column-gap: 20px;
+    margin-top: 11px;
+  }
+}

@@ -1,0 +1,14 @@
+@import "../../styles/vars";
+
+.dashboard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 29px;
+
+  &__layout {
+    display: flex;
+    column-gap: 15px;
+  }
+
+}

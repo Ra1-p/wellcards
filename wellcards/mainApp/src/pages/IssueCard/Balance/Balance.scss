@@ -1,0 +1,38 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/vars";
+
+$background: #d6e0e9;
+$text: #1a305b;
+
+.balance {
+  width: 81%;
+  color: $text;
+  background-color: $background;
+  border-radius: 5px;
+  padding: 26px 19px 26px 31px;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    @include font($font-size: 2rem, $font-weight: 700, $line-height: 2.6rem);
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    @include font($font-size: 1.6rem, $font-weight: 500, $line-height: 2.08rem);
+    text-align: center;
+  }
+
+  &__sum {
+    @include font($font-size: 2.4rem, $font-weight: 700, $line-height: 3.12rem);
+  }
+  &__body {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__button {
+    padding-top: 42px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}

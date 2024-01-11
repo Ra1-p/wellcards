@@ -1,0 +1,65 @@
+@import "../../styles/mixins";
+
+$label: #1a305b;
+$input: #375ba1;
+
+.custom-input {
+  font-family: "Sarabun", "sans-serif";
+  height: 50px;
+  outline: none;
+  color: $input;
+  border-radius: 10px;
+  padding-left: 15px;
+  background-color: transparent;
+  @include font($font-size: 1.6rem, $font-weight: 500, $line-height: 2.08rem);
+  border: 2px solid $input;
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  &::placeholder {
+    color: inherit;
+  }
+
+  &_padding {
+    padding-left: 23px;
+  }
+
+  &__symbol {
+    position: absolute;
+    left: 12px;
+    top: 43.2px;
+    color: $input;
+    @include font($font-size: 1.6rem, $font-weight: 500, $line-height: 2.08rem);
+  }
+
+  &__label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: "Sarabun", "sans-serif";
+    margin-bottom: 7px;
+    color: $label;
+    @include font($font-size: 2rem, $font-weight: 700, $line-height: 2.6rem);
+
+    .copy-sign {
+      position: absolute;
+      right: 6.28px;
+      top: 6px;
+      width:  16.19px;
+      height: 14.72px;
+    }
+  }
+
+}
+
+.label_small {
+  @include font($font-size: 1.6rem, $font-weight: 700, $line-height: 2.08rem);
+  input {
+    height: 36px;
+  }
+  span {
+    top: 31px;
+  }
+}

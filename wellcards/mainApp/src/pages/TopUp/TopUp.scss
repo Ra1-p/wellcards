@@ -1,0 +1,24 @@
+@import "../../styles/mixins";
+@import "../../styles/vars";
+
+.topup {
+    width: 100%;
+}
+
+.topup-main {
+    margin-top: 28px;
+    padding: 0px 25px 0px 25px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+
+    &__crypto {
+        margin-top: 25px;
+
+        & .title {
+            margin-bottom: 92px;
+            @include font($font-size: 2rem, $font-weight: 700, $line-height: 2.6rem);
+            color: $darknessblue;
+        }
+    }
+}

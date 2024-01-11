@@ -1,0 +1,6 @@
+@import '../../styles/vars';
+
+.active {
+  outline: 2px solid $outline;
+  outline-offset: 2px;
+}

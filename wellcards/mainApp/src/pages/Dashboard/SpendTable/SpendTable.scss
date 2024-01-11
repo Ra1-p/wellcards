@@ -1,0 +1,65 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/vars";
+
+$table-background: #d6e0e9;
+$table-text: #1a305b;
+$border-color: #6786c7;
+
+.spend-table {
+  color: $table-text;
+  font-family: "Sarabun", "sans-serif";
+  @include font($font-size: 1.6rem, $font-weight: 700, $line-height: 2.08rem);
+  border-collapse: collapse;
+
+  &__wrapper {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: $table-background;
+    padding-bottom: 22px;
+    width: 100%;
+  }
+
+  &__title {
+    padding-top: 20px;
+    padding-left: 25px;
+    text-align: left;
+    background-color: inherit;
+    @include font($font-size: 2rem, $font-weight: 700, $line-height: 2.6rem);
+  }
+
+  &__row {
+    border-bottom: 1px solid $border-color;
+  }
+
+  &__head {
+    font-weight: 500;
+
+    .cell {
+      height: 41px;
+      &:first-child {
+        padding-left: 23px;
+      }
+    }
+  }
+  .cell {
+    height: 50px;
+
+    &_user-name {
+      width: 28.3%;
+    }
+
+    &_email {
+      width: 36.1%;
+    }
+    &_sum {
+      width: 24.15%;
+    }
+
+    &:first-child {
+      padding-left: 25px;
+    }
+    &:last-child {
+      padding-right: 25px;
+    }
+  }
+}

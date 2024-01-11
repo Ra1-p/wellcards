@@ -1,0 +1,34 @@
+@import "../../../styles/vars";
+@import "../../../styles/mixins";
+
+.cards-list {
+
+    &__table {
+        width: 100%;
+        margin-top: 16px;
+        border: none;
+        outline: none;
+
+        a {
+            text-decoration: none;
+        }
+
+        & th {
+            text-align: center;
+            text-align-last: left;
+            color: $darkblue;
+            padding-bottom: 8px;
+            @include font($font-size: 1.6rem, $font-weight: 500, $line-height: 1.82rem);
+        }
+
+        & a{
+            display: table-cell;
+        }
+
+        & td {
+            padding-bottom: 10px;
+            color: $darknessblue;
+            @include font($font-size: 1.5rem, $font-weight: 700, $line-height: 1.69rem);
+        }
+    }
+}

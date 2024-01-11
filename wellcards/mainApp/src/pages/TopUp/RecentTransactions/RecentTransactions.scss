@@ -1,0 +1,133 @@
+@import "../../../styles/mixins";
+@import "../../../styles/vars";
+
+.recent-transactions {
+    margin-top: 18px;
+    &__title {
+        @include font($font-size: 3rem, $line-height: 3.9rem, $font-weight: 700);
+        color: $darknessblue;
+        margin-bottom: 15px;
+    }
+
+    &-main {
+        padding-top: 23px;
+        & .header {
+
+            display: grid;
+            grid-template-columns: auto auto 1fr;
+            align-items: center;
+
+            &__title {
+                justify-self: start;
+                @include font($font-size: 2rem, $line-height: 2.6rem, $font-weight: 700);
+                margin-right: 34px;
+            }
+
+            & button {
+                justify-self: end;
+            }
+        }
+    }
+
+    &__table {
+
+        & th {
+            padding-bottom: 20px;
+            text-align: left;
+            color: $darkblue;
+            @include font($font-size: 16px, $line-height: 2.08rem, $font-weight: 500);
+
+
+            &:nth-child(7) {
+                padding-left: 15px;
+            }
+        }
+
+        & tr {
+            .date-time {
+                display: inline-block;
+                text-align: center;
+            }
+
+            & td:nth-child(1) {
+                padding-right: 62px;
+                text-align: center;
+                display: inline-block;
+                align-items: center;
+                width: 46px;
+                word-wrap: break-word;
+            }
+
+            & td:nth-child(2) {
+                padding-right: 20px;
+            }
+
+            & td:nth-child(3) {
+                padding-right: 35px;
+            }
+
+            & td:nth-child(4) {
+                padding-right: 35px;
+            }
+
+            & td:nth-child(5) {
+                padding-right: 55px;
+            }
+
+            & td:nth-child(6) {
+                text-align: center;
+                padding-right: 40px;
+                padding-left: 10px;
+            }
+        }
+
+        & td {
+            height: 102px;
+            color: $darknessblue;
+            @include font($font-size: 1.5rem, $line-height: 1.95rem, $font-weight: 700);
+
+
+            .date-time {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .time {
+                    line-height: 1.3rem;
+                    font-size: 9px;
+                }
+            }
+
+        }
+
+        .address {
+            margin: 0;
+            position: relative;
+            width: 225px;
+            height: 27px;
+            padding-left: 15px;
+            display: flex;
+            align-items: center;
+            border-radius: 4px;
+            border: 1px solid $darknessblue;
+
+            & img {
+                cursor: pointer;
+                position: absolute;
+                right: 6.28px;
+                top: 6px;
+            }
+        }
+
+        .status {
+            color: white;
+            padding: 4px 11px;
+            border-radius: 4px;
+            &__success {
+                background-color: $green;
+            }
+
+        }
+    }
+}

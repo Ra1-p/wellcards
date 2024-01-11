@@ -1,0 +1,12 @@
+:root {
+  --page-background: #e9f1f7;
+  --form-text: #1a305b;
+  --confirm-text: #1a305b;
+  --form-background: #d6e0e9;
+  --confirm-background: #d6e0e9;
+  --submit-text: #ffffff;
+  --color-primary: #375ba1;
+  --logo-highlight: #fafafa;
+  --link-text: #6786c7;
+  font-size: 10px;
+}

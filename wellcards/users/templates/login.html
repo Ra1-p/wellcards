@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'wellcardsFunctional/css/reset.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'wellcardsFunctional/css/var.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'wellcardsFunctional/css/layout.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'wellcardsFunctional/css/logo.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'wellcardsFunctional/css/login.css' %}" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sarabun:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <div class="logo">
+          <img class="logo__img" src="{% static 'wellcardsFunctional/images/logo.svg' %}">
+          <h1 class="logo__title">WELLCARDS</h1>
+          <p class="logo__description">
+            Virtual debit cards and buying solutions
+          </p>
+        </div>
+        <div class="form-wrapper">
+          <form class="form" method="post">
+            <h2 class="form__title">Welcome to Wellcards</h2>
+            {% csrf_token %}
+            {{ form.username.label_tag }}
+            {{ form.username }}
+            {{ form.password.label_tag }}
+            {{ form.password }}
+            <button class="form__submit" type="submit">Login</button>
+          </form>
+          <a class="link" href="{% url 'registration' %}">Sing up</a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

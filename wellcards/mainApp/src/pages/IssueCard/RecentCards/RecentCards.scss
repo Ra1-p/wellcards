@@ -1,0 +1,83 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/vars";
+.recent-cards {
+  background-color: $lightnessblue;
+  padding: 18px 37px 13px 25px;
+  border-radius: 5px;
+  width: 100%;
+  border-spacing: 10px 0;
+  &__title {
+    margin-top: 34px;
+    margin-bottom: 11px;
+    $color: $darknessblue;
+    @include font($font-size: 1.8rem, $font-weight: 500, $line-height: 2.34rem);
+  }
+
+  &__body {
+    &__row {
+      &:last-child {
+        .cell {
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  .cell {
+    color: $darknessblue;
+   
+    padding-bottom: 10px;
+    @include font($font-size: 1.4rem, $font-weight: 700, $line-height: 1.82rem);
+    &__time {
+      @include font($font-size: 1rem, $font-weight: 400, $line-height: 1.3rem);
+    }
+
+    &__bin {
+      display: inline-block;
+      padding: 5px 12px 4px;
+      border: 1px solid $darknessblue;
+      border-radius: 4px;
+    }
+
+    &__balance {
+      display: inline-block;
+      padding: 5px 15px 4px;
+      border-radius: 4px;
+      background-color: $green;
+      color: $app-background;
+    }
+    &__card {
+      width: 260px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 4px;
+      border: 1px solid $darknessblue;
+      padding: 5px 15px 4px;
+    }
+    &__button {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      background: transparent;
+      border: none;
+      outline: none;
+      padding: 0;
+      margin: 0;
+    }
+    &__button-wrapper {
+      display: flex;
+      column-gap: 8px;
+    }
+  }
+  &__head {
+    .cell {
+      color: $darkblue;
+      @include font(
+        $font-size: 1.6rem,
+        $font-weight: 500,
+        $line-height: 2.08rem
+      );
+    }
+  }
+}

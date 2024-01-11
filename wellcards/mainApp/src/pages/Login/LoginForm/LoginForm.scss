@@ -1,0 +1,49 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/vars";
+
+.form-wrapper {
+  width: 400px;
+  border-radius: 30px;
+  background-color: $lightnessblue;
+  box-sizing: border-box;
+  padding: 68px 44px 31px 44px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    @include font($font-weight: 500, $font-size: 3.2rem, $line-height: 4.16rem);
+    text-wrap: nowrap;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  &__forgot {
+    width: fit-content;
+    margin-left: auto;
+    margin-top: 5px;
+    margin-bottom: 9px;
+    @include font($font-weight: 600, $font-size: 1.3rem, $line-height: 1.69rem);
+    color: $darknessblue;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+
+.link {
+  @include font($font-weight: 600, $font-size: 2rem, $line-height: 2.6rem);
+  margin-top: 10px;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+}

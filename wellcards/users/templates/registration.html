@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="{% static 'wellcardsFunctional/css/reset.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'wellcardsFunctional/css/var.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'wellcardsFunctional/css/layout.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'wellcardsFunctional/css/logo.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'wellcardsFunctional/css/registration.css' %}" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sarabun:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <div class="logo">
+          <img class="logo__img" src="{% static 'wellcardsFunctional/images/logo.svg' %}" />
+          <h1 class="logo__title">WELLCARDS</h1>
+          <p class="logo__description">
+            Virtual debit cards and buying solutions
+          </p>
+        </div>
+        <div class="form-wrapper">
+          <form class="form" method="post">
+            {% csrf_token %}
+            <div class="form__text">
+              <h2 class="form__title">Sign up</h2>
+              <h3 class="form__subtitle">
+                Welcome! Fill fields below to create an account
+              </h3>
+            </div>
+            <div class="form__person-info">
+              <label class="form__label">
+                Enter your first name
+                {{ form.first_name }}
+              </label>
+              <label class="form__label">
+                Enter your last name
+                {{ form.last_name }}
+              </label>
+            </div>
+            <label class="form__label">
+              Enter your e-mail
+              {{ form.username }}
+            </label>
+            <label class="form__label">
+              Enter your password
+              {{ form.password1 }}
+            </label>
+            <label class="form__label">
+              Telegram
+              {{ form.telegram }}
+            </label>
+            <div class="form__inner-wrapper">
+             <label class="form__checkbox-label">
+               <input class="form__checkbox" type="checkbox" />
+               <span class="form__mark"></span>
+               <span onclick="return false;">By signing up, you agree to our
+                 <a class="link" href="#">Terms of Use</a> and
+                 <a class="link" href="#">Privacy Policy</a></span>
+             </label>
+             <button class="form__submit" type="submit">Sign up</button>
+            </div>
+          </form>
+          <div class="form__inner-text">Already have an account? <a class="link" href="{% url 'login' %}">Log in</a></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

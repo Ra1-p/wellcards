@@ -1,0 +1,60 @@
+@import "../../styles/vars";
+@import "../../styles/mixins";
+
+nav {
+  min-width: 282px;
+  font-family: "Sarabun", "sans-serif  ";
+}
+
+.nav-menu {
+  padding: 0;
+  list-style-type: none;
+  color: $darknessblue;
+  text-decoration: none;
+  margin: 0;
+
+  &__first-item {
+    margin-bottom: 7px;
+  }
+
+  &__item {
+    cursor: pointer; // Временно
+    color: inherit;
+    text-decoration: inherit;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 18px 0 18px 22px;
+    &__title {
+      @include font(
+        $font-size: 2.2rem,
+        $font-weight: 700,
+        $line-height: 2.6rem
+      );
+    }
+  }
+
+  .subnav-menu {
+    list-style-type: inherit;
+
+    &__item {
+      color: inherit;
+      text-decoration: inherit;
+      cursor: pointer; // Временно, потом будет как ссылка
+      padding: 10px 0 10px 8px;
+      display: flex;
+      gap: 9px;
+      align-items: center;
+      border-radius: 5px;
+    }
+
+    &__title {
+      @include font(
+        $font-size: 1.8rem,
+        $font-weight: 500,
+        $line-height: 2.34rem
+      );
+    }
+  }
+}

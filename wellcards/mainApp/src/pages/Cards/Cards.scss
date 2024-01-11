@@ -1,0 +1,20 @@
+@import "../../styles/vars";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+span,
+p {
+  color: $darknessblue;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 25px;
+  row-gap: 35px;
+  column-gap: 25px;
+  width: 100%;
+}

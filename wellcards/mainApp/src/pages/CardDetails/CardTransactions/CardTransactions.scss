@@ -1,0 +1,17 @@
+@import "../../../styles/mixins";
+@import "../../../styles/vars";
+
+.card-transactions {
+  border-radius: 5px;
+  padding: 21px 0 36px 25px;
+  background-color: $lightnessblue;
+  &__filters {
+    display: flex;
+    column-gap: 15px;
+  }
+  &__controls {
+    margin-top: 23px;
+    display: flex;
+    column-gap: 24px;
+  }
+}

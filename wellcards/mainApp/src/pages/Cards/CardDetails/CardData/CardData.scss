@@ -1,0 +1,40 @@
+@import "../../../../styles/mixins.scss";
+@import "../../../../styles//vars";
+
+.card-data {
+  background-color: $lightnessblue;
+  border-radius: 10px;
+  padding: 25px 23px 30px 25px;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    @include font($font-size: 2rem, $font-weight: 700, $line-height: 2.6rem);
+    color: $darknessblue;
+  }
+  &__controls {
+    display: flex;
+    column-gap: 10px;
+  }
+  &__button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  &__num {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $darkblue;
+    @include font($font-size: 2rem, $line-height: 2.6rem, $font-weight: 500);
+    border: 2px solid $darkblue;
+    border-radius: 10px;
+    padding: 14px 35px 15px 25px;
+  }
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    row-gap: 25px;
+  }
+}

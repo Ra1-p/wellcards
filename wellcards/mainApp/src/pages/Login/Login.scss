@@ -1,0 +1,9 @@
+@import "../../styles/placeholders";
+
+.login-main {
+  @extend %auth-main;
+}
+
+.login-container {
+  @extend %auth-container;
+}

@@ -1,0 +1,28 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/vars";
+.create-form {
+  position: relative;
+  background-color: $lightnessblue;
+  padding: 25px 23px 25px 25px;
+  height: fit-content;
+  border-radius: 5px;
+  &__all-cards {
+    position: absolute;
+    right: 23px;
+    top: 27px;
+    color: $darkblue;
+    @include font($font-size: 1.4rem, $font-weight: 500, $line-height: 1.82rem);
+  }
+  &__buttons {
+    margin-top: 19px;
+    display: flex;
+    column-gap: 24px;
+  }
+  &__inputs {
+    display: grid;
+    gap: 35px 25px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    margin-bottom: 20px;
+  }
+}

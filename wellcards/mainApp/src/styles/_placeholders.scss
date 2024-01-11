@@ -1,0 +1,20 @@
+@import "./vars";
+
+%auth-main {
+  background-color: $app-background;
+  height: 100vh;
+  background-image: url("../../assets/cards.svg");
+  background-size: calc(65vh);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+%auth-container {
+  max-width: 1440px;
+  padding: 0 127px 0 134px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

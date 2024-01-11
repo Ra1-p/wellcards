@@ -1,0 +1,20 @@
+@import "../src/styles/vars";
+
+* {
+    font-family: "Sarabun";
+  }
+
+.container {
+    margin-left: 75px;
+    margin-right: 70px;
+}
+
+.main {
+    display: flex;
+}
+
+.block {
+    border-radius: 5px;
+    padding-left: 25px;
+    background-color: $lightnessblue;
+}

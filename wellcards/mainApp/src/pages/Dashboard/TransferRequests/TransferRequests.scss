@@ -1,0 +1,25 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/vars";
+
+$transfer-text: #0a014f;
+
+.transfer-requests {
+  display: flex;
+  background-color: $lightnessblue;
+  border-radius: 5px;
+  flex-direction: column;
+  padding: 17px 0 24px 25px;
+  &__title {
+    text-wrap: nowrap;
+    margin-right: 44px;
+    color: $transfer-text;
+    @include font($font-size: 2rem, $font-weight: 700, $line-height: 2.6rem);
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $darkblue;
+    margin-right: 25px;
+    @include font($font-size: 1.6rem, $font-weight: 500, $line-height: 2.08rem);
+  }
+}

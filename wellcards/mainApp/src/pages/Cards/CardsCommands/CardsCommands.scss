@@ -1,0 +1,28 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/vars";
+
+.cards {
+
+    &-commands {
+        padding-top: 20px;
+        padding-bottom: 22px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 8px;
+        align-items: center;
+
+        button {
+            margin-top: 15px;
+            justify-self: center;
+        }
+    }
+
+    &-count {
+        color: $darknessblue;
+        text-align: center;
+        @include font($font-size: 1.6rem, $font-weight: 500, $line-height: 2.08rem);
+        margin-top: 15px;
+        margin-left: 50px;
+        margin-right: 100px;
+    }
+}
